@@ -7,7 +7,7 @@ The project introduces a lightweight, efficient, and highly accurate
 framework for detecting AI-generated images using frozen **CLIP ViT-L/14
 embeddings** and a compact **MLP classifier**.
 
-## 🚀 Overview
+## Overview
 
 Modern generative models (Midjourney, DALL·E 3, SDXL, etc.) produce
 photo-realistic images that challenge existing forensic tools.\
@@ -51,33 +51,27 @@ This project provides a fast and robust detection pipeline with:
 -   **AI vs Human Generated Images (Kaggle)** --- 80,000 images\
 -   **Chameleon Dataset** --- high-fidelity synthetic images
 
-## 📊 Results
+## Results
 
 ### Primary Performance
 
   Model                        Accuracy     F1
   ---------------------------- ------------ ------------
   **CLIP + MLP**               **0.9852**   **0.9851**
-  CLIP + Logistic Regression   0.9774       0.9773
-  CLIP + XGBoost               0.9537       0.9535
-  EfficientNetV2B3             0.8796       0.8888
+  
+ - CLIP + Logistic Regression   0.9774       0.9773
+   
+ - CLIP + XGBoost               0.9537       0.9535
+   
+ - EfficientNetV2B3             0.8796       0.8888
 
 ### Runtime Efficiency
 
   Model            Training Time   Inference
   ---------------- --------------- -----------
   **CLIP + MLP**   **22.5 min**    **2 sec**
+  
   CNN Baseline     6 hours         600 sec
-
-### Robustness to Transformations
-
-  Transformation   Accuracy
-  ---------------- ------------
-  JPEG-75          **98.52%**
-  JPEG-50          96.50%
-  JPEG-30          96.63%
-  Gaussian Blur    96.07%
-  Resize 128×128   89.95%
 
 ##  Installation
 
