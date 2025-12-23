@@ -3,6 +3,7 @@
 This repository contains the official implementation of the paper
 **"Speeding Up AI Image Forensics: A CLIP-MLP Pipeline for Real
 vs. Synthetic Detection"**.\
+(publication pending)
 The project introduces a lightweight, efficient, and highly accurate
 framework for detecting AI-generated images using frozen **CLIP ViT-L/14
 embeddings** and a compact **MLP classifier**.
