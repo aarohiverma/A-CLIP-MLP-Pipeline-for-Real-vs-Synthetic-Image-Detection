@@ -80,9 +80,7 @@ This project provides a fast and robust detection pipeline with:
 pip install -r requirements.txt
 ```
 
-The full research paper is included as:\
-**realvfakeconfpaper.pdf**
 
-## 📜 License
+##  License
 
 MIT License
